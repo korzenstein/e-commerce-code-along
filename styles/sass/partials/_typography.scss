@@ -1,0 +1,24 @@
+// import Jakarta Sans font
+
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"),
+    url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2"),
+    url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.tff");
+  font-weight: normal;
+}
+
+// import Jakarta Sans font in bold
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"),
+    url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"),
+    url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.tff");
+  font-weight: bold;
+}
+
+// import Young Sarif font
+@font-face {
+  font-family: "Young Sarif";
+  src: url("../fonts/youngserif/YoungSerif-Regular.otf");
+}
