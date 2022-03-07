@@ -1,0 +1,59 @@
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+button {
+  color: $primaryColor;
+  background-color: transparent;
+  padding: 18px 36px;
+  border: 2px solid $primaryColor;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $primaryColor;
+    color: $solidWhiteColor;
+  }
+  &:focus {
+    background-color: $primaryColor;
+    color: $solidWhiteColor;
+  }
+  &.secondary {
+    background-color: transparent;
+    border-color: $solidWhiteColor;
+    color: $solidWhiteColor;
+    padding: 8px 12px;
+    &:hover {
+      background-color: $solidWhiteColor;
+      color: $primaryColor;
+    }
+    &:focus {
+      background-color: $solidWhiteColor;
+      color: $primaryColor;
+    }
+  }
+  &.solid {
+    color: $solidWhiteColor;
+    background-color: $primaryColor;
+    &:hover {
+      color: $primaryColor;
+      background-color: $solidWhiteColor;
+    }
+  }
+  /* style the button in the main nav menu to look just like an icon */
+  &.menuIcon {
+    display: inherit;
+    padding: 0;
+    border: none;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
