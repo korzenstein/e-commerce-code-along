@@ -570,6 +570,9 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f8fbf3;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 header .headerImgContainer {
   -ms-flex-preferred-size: 45%;

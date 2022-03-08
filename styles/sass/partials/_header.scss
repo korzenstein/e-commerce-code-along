@@ -4,6 +4,9 @@ header {
   margin-bottom: 90px;
   flex-wrap: wrap;
   background-color: $tertiaryColor;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
 
   .headerImgContainer {
     flex-basis: 45%;
