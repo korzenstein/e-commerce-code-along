@@ -1,0 +1,22 @@
+.gallery {
+  background-color: $tertiaryColor;
+  padding: 90px 0 0 0;
+
+  h2 {
+    max-width: 480px;
+  }
+}
+
+.galleryItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item {
+    width: 15%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
