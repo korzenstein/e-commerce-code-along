@@ -558,3 +558,32 @@ button.menuIcon:focus {
 .navBar .slideOutNav .legal a:hover, .navBar .slideOutNav .legal a:focus {
   color: #fff;
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f8fbf3;
+}
+header .headerImgContainer {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+header .headerImgContainer img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+header .headerContent {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+header .headerContent .contentContainer {
+  width: 65%;
+  margin: 0 auto;
+}
