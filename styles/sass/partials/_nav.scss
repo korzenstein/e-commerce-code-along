@@ -5,3 +5,115 @@
   text-align: center;
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
 }
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: $solidWhiteColor;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .searchCart {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .counter {
+    p {
+      width: 24px;
+      height: 24px;
+      background-color: $primaryColor;
+      color: $solidWhiteColor;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+
+    &:checked ~ .slideOutNav {
+      left: 0;
+    }
+    &:focus + label {
+      border: 1px dotted $primaryColor;
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .slideOutNav {
+    position: fixed;
+    top: 0;
+    left: -506px;
+    z-index: 20;
+    background-color: $primaryColor;
+    color: $solidWhiteColor;
+    border-right: 1px solid $secondaryColor;
+    padding: 35px 50px;
+    width: 100%;
+    max-width: 506px;
+    transition: 0.75s;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        color: $solidWhiteColor;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-family: $bodyFont;
+        padding: 10px 0 10px 20px;
+      }
+    }
+    hr {
+      width: 24px;
+      height: 2px;
+      margin: 36px 0;
+      background-color: $solidWhiteColor;
+      border: none;
+    }
+
+    .mainMenu {
+      font-family: "Young Sarif";
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+
+      a {
+        &:hover,
+        &:focus {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .legal {
+      font-family: "Jakarta Sans";
+      font-weight: bold;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.5);
+        &:hover,
+        &:focus {
+          color: $solidWhiteColor;
+        }
+      }
+    }
+  }
+}

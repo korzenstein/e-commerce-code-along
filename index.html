@@ -23,12 +23,18 @@
     </div>
     <nav class="navBar">
       <div class="wrapper">
-        <input type="checkbox" id="openSidebarMenu" />
+        <input
+          type="checkbox"
+          id="openSidebarMenu"
+          checked="true"
+          value="yes"
+        />
         <label for="openSidebarMenu">
           <img
             src="./assets/menu-button.svg"
             alt="Menu button"
             class="menuIcon"
+            for="openSidebarMenu"
           />
         </label>
 
@@ -36,7 +42,7 @@
 
         <div class="slideOutNav">
           <div class="buttonContainer">
-            <button>x</button>
+            <button id="buttonX" onclick="hideNav()">x</button>
           </div>
           <nav>
             <ul class="mainMenu">
@@ -257,5 +263,6 @@
       </div>
       <!-- .wrapper END-->
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
