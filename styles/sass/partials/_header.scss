@@ -26,3 +26,28 @@ header {
     }
   }
 }
+
+// contactHeader and contactContent
+
+.contactHeader {
+  background-color: $quaternaryColor;
+  padding-top: 120px;
+
+  .contactContent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+.contactHeader::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/wave.svg);
+  background-color: $quaternaryColor;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}

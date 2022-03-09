@@ -1,0 +1,65 @@
+.mapFormContainer {
+  display: flex;
+  .map {
+    width: 50%;
+    iframe {
+      width: 100%;
+    }
+  }
+}
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+
+  input,
+  textarea {
+    border: none;
+    padding: 0 0 10px 5px;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: $bodyFont;
+
+    &::placeholder {
+      font-size: 0.8rem;
+      color: $primaryColor;
+      line-height: 1.2rem;
+      opacity: 1;
+      text-transform: uppercase;
+    }
+    &:focus {
+      border-bottom: 1px solid $primaryColor;
+    }
+  }
+  input {
+    border-bottom: 1px solid #eee;
+  }
+
+  textarea {
+    min-height: 130px;
+    border: 1px solid #eee;
+    border-top: none;
+  }
+  select {
+    appearance: none;
+    font-family: $bodyFont;
+    color: $primaryColor;
+    padding: 0 0 10px 5px;
+    text-transform: uppercase;
+    background-color: $solidWhiteColor;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    line-height: 1.2rem;
+    background-image: url(../assets/caret-down-solid.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: 95% center;
+    background-size: 20px;
+
+    option {
+      font-family: $bodyFont;
+    }
+  }
+}

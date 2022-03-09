@@ -591,6 +591,35 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
+.contactHeader {
+  background-color: #fff5f5;
+  padding-top: 120px;
+}
+.contactHeader .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+.contactHeader::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/wave.svg);
+  background-color: #fff5f5;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}
+
 footer {
   background-color: #084b6d;
   color: #fff;
@@ -701,6 +730,108 @@ footer .social a:hover, footer .social a:focus {
   display: block;
 }
 
+.mapFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mapFormContainer .map {
+  width: 50%;
+}
+.mapFormContainer .map iframe {
+  width: 100%;
+}
+
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm input,
+.contactForm textarea {
+  border: none;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Jakarta Sans";
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  line-height: 1.2rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  line-height: 1.2rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  line-height: 1.2rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  line-height: 1.2rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  line-height: 1.2rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-bottom: 1px solid #084b6d;
+}
+.contactForm input {
+  border-bottom: 1px solid #eee;
+}
+.contactForm textarea {
+  min-height: 130px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+.contactForm select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  padding: 0 0 10px 5px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+  line-height: 1.2rem;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: 95% center;
+  background-size: 20px;
+}
+.contactForm select option {
+  font-family: "Jakarta Sans";
+}
+
 /* _mediaQueries.scss */
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
@@ -729,6 +860,24 @@ footer .social a:hover, footer .social a:focus {
   /* all of our styles for TABLET devices will go within this breakpoin */
   footer .newsletter {
     width: 70%;
+  }
+
+  .mapFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mapFormContainer .map {
+    margin-bottom: 50px;
+    width: 85%;
+  }
+  .mapFormContainer .contactForm {
+    width: 85%;
+    margin-left: 0;
   }
 }
 @media (max-width: 500px) {

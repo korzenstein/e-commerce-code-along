@@ -93,7 +93,7 @@
 
     <header class="contactHeader">
       <div class="wrapper">
-        <div class="contactConent">
+        <div class="contactContent">
           <h5>Contact</h5>
           <h3>We're here to help</h3>
           <p>
@@ -107,52 +107,39 @@
     <main>
       <section class="mapForm">
         <div class="wrapper">
-          <div class="mapFormContainer">
-            <!-- map goes in here -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.995384023928!2d-79.40004738470948!3d43.6482643791215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dc87fa67bd%3A0xe172d8fcbe1c5997!2sJuno%20College%20of%20Technology%20(formerly%20HackerYou)!5e0!3m2!1sen!2sca!4v1646855569211!5m2!1sen!2sca"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <!-- form goes here -->
-          <form action="#" method="post" class="contactForm" name="contactForm">
-            <label for="name" class="sr-only">Name</label>
-            <input id="name" placeholder="name" type="text" />
+            <div class="mapFormContainer">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.995197459649!2d-79.40005274951488!3d43.64826826066616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dc87fa67bd%3A0xe172d8fcbe1c5997!2sJuno%20College%20of%20Technology%20(formerly%20HackerYou)!5e0!3m2!1sen!2sca!4v1632838615427!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <form action="#" method="POST" class="contactForm" name="contactForm">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
 
-            <label for="surname" class="sr-only">Surname</label>
-            <input id="surname" placeholder="surname" type="text" />
+                <label for="surname" class="sr-only">Surname</label>
+                <input type="text" id="surname" placeholder="Surname">
 
-            <label for="email" class="sr-only">Email</label>
-            <input id="email" placeholder="email" type="email" />
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
 
-            <label for="phone" class="sr-only">Phone</label>
-            <input id="phone" placeholder="phone" type="phone" />
+                <label for="phone" class="sr-only">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone">
 
-            <select name="reason" id="reason">
-              <option value="initial" disabled selected>
-                Reason for contacting
-              </option>
-              <option value="refund">Refund request</option>
-              <option value="status">Order status update</option>
-              <option value="praise">Praise!</option>
-              <option value="complaint">General concerns</option>
-            </select>
-            <label class="sr-only" for="message">Message for me</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Message for me"
-            ></textarea>
+                <select name="reason" id="reason">
+                    <option value="initial" disabled selected>Reason for contacting</option>
+                    <option value="refund">Refund request</option>
+                    <option value="status">Order status update</option>
+                    <option value="praise">Praise!</option>
+                    <option value="complaint">General concerns</option>
+                </select>
 
-            <button>Send Message</button>
-          </form>
+                <label for="message" class="sr-only">Message for me</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+
+                <button>Send Message</button>
+            </form>
+            </div><!-- .mapFormContainer END -->
         </div>
+    </section>
       </section>
       <section class="gallery" id="gallery">
         <div class="wrapper">
