@@ -855,6 +855,15 @@ footer .social a:hover, footer .social a:focus {
   footer .footerNav nav ul {
     width: auto;
   }
+
+  .mapFormContainer .map {
+    width: 45%;
+  }
+
+  .contactForm {
+    width: calc(55% - 50px);
+    margin-left: 50px;
+  }
 }
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoin */
@@ -919,5 +928,9 @@ footer .social a:hover, footer .social a:focus {
   }
   footer .socialIcons {
     margin-bottom: 30px;
+  }
+
+  .mapFormContainer .map {
+    width: 100%;
   }
 }
